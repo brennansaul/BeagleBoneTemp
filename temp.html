@@ -13,7 +13,7 @@
             var tempF = (tempC * 9/5) + 32;
            //$("#temp").html(" " + tempC + " C");
            $("#temp").html(" " + tempF + " F");
-          //$('.temp').css('width': " " + tempF + "px");
+           $('.temp').css('width': " " + tempF + "px");
         }
         socket.emit('monitor', pin);
     </script>
@@ -76,7 +76,7 @@
     <h2>BBBw Temperature reading:</h2>
     <h1 id="temp">-</h1>
     <div class="therm">
-      <div class="temp" style="width: 80%"></div>
+      <div class="temp"></div>
     </div>
   </body>
 </html>
