@@ -13,7 +13,7 @@
             var tempF = (tempC * 9/5) + 32;
            //$("#temp").html(" " + tempC + " C");
            $("#temp").html(" " + tempF + " F");
-           $('.temp').css(width: tempF + "px");
+           $('.temp').css({ width: tempF + "px" });
         }
         socket.emit('monitor', pin);
     </script>
